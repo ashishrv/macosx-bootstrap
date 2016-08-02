@@ -17,6 +17,6 @@ brew install homebrew/dupes/apple-gcc42
 rc=$?; if [[ $rc != 0 ]]; then echo "error in brew package installation"; exit $rc; fi
 brew install cask
 rc=$?; if [[ $rc != 0 ]]; then echo "error in brew package installation"; exit $rc; fi
-brew install brew-cask
+brew install Caskroom/cask/brew-cask
 rc=$?; if [[ $rc != 0 ]]; then echo "error in brew package installation"; exit $rc; fi
 
