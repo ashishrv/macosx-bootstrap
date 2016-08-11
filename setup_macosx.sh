@@ -22,3 +22,12 @@ cp $SCRIPT_PATH/battleschool_config.yaml ~/.battleschool/config.yml
 # Run battleschool
 echo "Provide sudo password for mac osx"
 battle --ask-sudo-pass --update-sources
+
+# Install Fishshell
+brew install fish
+
+# Add fish shell
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+
+#Make fishshell the default
+chsh -s /usr/local/bin/fish
