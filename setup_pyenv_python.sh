@@ -19,4 +19,3 @@ python get-pip.py
 pip install —upgrade pip
 pip install mercurial
 pip install battleschool
-
