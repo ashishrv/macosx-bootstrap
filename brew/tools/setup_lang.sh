@@ -19,7 +19,6 @@ install_brew_package bash
 install_brew_package bash-completion
 install_brew_package boost
 install_brew_package boost-build
-install_brew_package cairo
 install_brew_package cmake
 install_brew_package cython
 install_brew_package diff-so-fancy
