@@ -41,7 +41,7 @@ mac_app_brew_cask_install rodeo
 mac_app_brew_cask_install r-app
 mac_app_brew_cask_install rstudio
 mac_app_brew_cask_install skype
-mac_app_brew_cask_install sublime-text-dev
+mac_app_brew_cask_install sublime-text
 mac_app_brew_cask_install virtualbox
 mac_app_brew_cask_install virtualbox-extension-pack
 mac_app_brew_cask_install vlc

@@ -34,3 +34,8 @@ install_brew_package homebrew/dupes/apple-gcc42
 
 # Get Homebrew-Cask: https://caskroom.github.io/
 brew tap caskroom/cask
+# https://github.com/caskroom/homebrew-versions
+brew tap caskroom/versions
+# https://github.com/caskroom/homebrew-fonts
+brew tap caskroom/fonts 
+
