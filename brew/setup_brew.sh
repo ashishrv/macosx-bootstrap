@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 fact=`command -v brew`
 if [ "x${fact}" == "x" ]; then
@@ -13,7 +12,6 @@ if [ "x${fact}" == "x" ]; then
 fi
 
 echo "Homebrew is installed already --- "
-
 
 install_brew_package(){
     brew_formula=$1
@@ -34,5 +32,5 @@ install_brew_package wget
 install_brew_package cask
 install_brew_package homebrew/dupes/apple-gcc42
 
-
-
+# Get Homebrew-Cask: https://caskroom.github.io/
+brew tap caskroom/cask
