@@ -16,7 +16,7 @@ echo "Homebrew is installed already --- "
 install_brew_package(){
     brew_formula=$1
     brew_formula_basename=$(basename $brew_formula)
-    if [ "x${fact}" != "x" ]; then 
+    if [ "x${brew_formula}" != "x" ]; then 
         if brew ls --versions ${brew_formula_basename} > /dev/null; then
             echo "Brew formula available: ${brew_formula}"
         else
