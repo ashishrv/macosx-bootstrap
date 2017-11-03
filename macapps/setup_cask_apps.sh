@@ -49,4 +49,25 @@ mac_app_brew_cask_install kaleidoscope
 mac_app_brew_cask_install notebooks
 mac_app_brew_cask_install the-unarchiver
 mac_app_brew_cask_install transmission
+mac_app_brew_cask_install boostnote
+mac_app_brew_cask_install visual-studio-code
+mac_app_brew_cask_install 1password
+mac_app_brew_cask_install 1password-cli
+mac_app_brew_cask_install dropbox
+mac_app_brew_cask_install evernote
+mac_app_brew_cask_install headset
+mac_app_brew_cask_install nvalt
+mac_app_brew_cask_install notational-velocity
+mac_app_brew_cask_install xoctave
+mac_app_brew_cask_install rstudio
+mac_app_brew_cask_install skype
+mac_app_brew_cask_install skypewebplugin 
+mac_app_brew_cask_install firefox
+mac_app_brew_cask_install multifirefox
+mac_app_brew_cask_install latexit
+mac_app_brew_cask_install mactex 
+mac_app_brew_cask_install texshop
+
+
+
 
