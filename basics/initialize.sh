@@ -19,6 +19,7 @@ echo "Creating basic directories ...."
 create_dir personal/workspace
 create_dir personal/scratchdir
 create_dir personal/books
+create_dir personal/workspace/projects
 create_dir personal/software/bin
 create_dir works/workspace
 create_dir works/docs
@@ -27,6 +28,7 @@ create_dir works/software
 create_dir works/software/bin
 create_dir works/workspace/gitrepo
 create_dir works/workspace/scratchdir
+create_dir works/workspace/projects
 create_dir works/cloudstorage
 
 
