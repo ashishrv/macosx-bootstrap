@@ -13,6 +13,7 @@ mac_app_brew_cask_install() {
     fi
 }
 
+mac_app_brew_cask_install iterm2
 mac_app_brew_cask_install alfred
 mac_app_brew_cask_install caskroom/versions/google-chrome-canary
 mac_app_brew_cask_install slate
