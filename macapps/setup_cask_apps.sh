@@ -67,7 +67,7 @@ mac_app_brew_cask_install multifirefox
 mac_app_brew_cask_install latexit
 mac_app_brew_cask_install mactex 
 mac_app_brew_cask_install texshop
-
-
+mac_app_brew_cask_install box-sync
+mac_app_brew_cask_install docker
 
 
