@@ -20,8 +20,9 @@ pyenv_install_python(){
     fi
 }
 
-pyenv_install_python 2.7.14
-pyenv_install_python 3.6.3
+CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" pyenv_install_python 2.7.14
+CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" pyenv_install_python 3.6.3
+
 
 # Keep 2.7.14 as default python version
 pyenv local 2.7.14
