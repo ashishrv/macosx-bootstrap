@@ -22,8 +22,16 @@ pyenv_install_python(){
 
 brew install readline xz sqlite3 openssl
 
-CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include -I/usr/local/opt/openssl/include" LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" pyenv_install_python 2.7.14
-CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include -I/usr/local/opt/openssl/include" LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib -L/usr/local/opt/sqlite/lib" pyenv_install_python 3.6.3
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
+export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
+export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
+export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
+export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
+export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
+
+pyenv_install_python 2.7.14
+pyenv_install_python 3.6.3
 
 
 # Keep 2.7.14 as default python version
