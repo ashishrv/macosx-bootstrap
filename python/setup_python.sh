@@ -26,14 +26,10 @@ CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" LDFLAGS
 
 # Keep 2.7.14 as default python version
 pyenv local 2.7.14
+pyenv global 2.7.14
 
 
-# Install some basic pip packages
-pip install mercurial
-pip install battleschool
-pip install libtmux
-pip install tmuxp
-pip install powerline-status
+
 
 
 
