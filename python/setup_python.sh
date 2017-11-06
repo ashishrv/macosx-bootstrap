@@ -2,7 +2,7 @@
 
 export PYENV_ROOT=${HOME}/.pyenv
 eval "$(pyenv init -)"
-
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 pyenv_install_python(){
     version=$1
@@ -20,7 +20,11 @@ pyenv_install_python(){
     fi
 }
 
-brew install readline xz sqlite3 openssl
+brew install readline 
+brew install xz 
+brew install sqlite3 
+brew install openssl 
+brew install expat
 
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
 export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
@@ -40,7 +44,7 @@ pyenv_install_python 2.7.14
 pyenv local 2.7.14
 pyenv global 2.7.14
 wget https://bootstrap.pypa.io/get-pip.py
-
+python get-pip.py
 # Install dotfiles
 pip install dotfiles
 
