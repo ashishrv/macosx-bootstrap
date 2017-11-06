@@ -29,15 +29,17 @@ export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
 export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
 export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
 export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
+export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
+export LDFLAGS="-L$(brew --prefix expat)/lib $LDFLAGS"
 
 pyenv_install_python 2.7.14
-pyenv_install_python 3.6.3
+#pyenv_install_python 3.6.3
 
 
 # Keep 2.7.14 as default python version
 pyenv local 2.7.14
 pyenv global 2.7.14
-
+wget https://bootstrap.pypa.io/get-pip.py
 
 # Install dotfiles
 pip install dotfiles
