@@ -10,7 +10,7 @@ pyenv_install_python(){
     if [ "x${fact}" == "x" ]; then 
         echo "Pyenv : not installed ... ${version}"
         echo "Instaling ....."
-        pyenv install ${version}
+        pyenv install -v ${version}
     else
         echo "Pyenv: already installed ... ${version}"
         # Make sure pip is installed for every version
@@ -22,11 +22,13 @@ pyenv_install_python(){
 
 brew install readline 
 brew install xz 
+brew link xz
 brew install sqlite3 
 brew install openssl 
 brew install expat
 
-export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+
+
 export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
 export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
 export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
@@ -35,6 +37,7 @@ export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
 export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
 export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
 export LDFLAGS="-L$(brew --prefix expat)/lib $LDFLAGS"
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include $CFLAGS"
 
 pyenv_install_python 2.7.14
 #pyenv_install_python 3.6.3
