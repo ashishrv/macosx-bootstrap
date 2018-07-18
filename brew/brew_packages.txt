@@ -57,3 +57,4 @@ wget
 xz
 youtube-dl
 zlib
+jenv
