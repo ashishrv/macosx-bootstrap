@@ -10,6 +10,15 @@ pyenv_install_python(){
     if [ "x${fact}" == "x" ]; then 
         echo "Pyenv : not installed ... ${version}"
         echo "Instaling ....."
+        CFLAGS="-I$(brew --prefix readline)/include" \
+        CFLAGS="-I$(brew --prefix openssl)/include" \
+        CFLAGS="-I$(brew --prefix sqlite)/include" \
+        CFLAGS="-I$(brew --prefix expat)/include" \
+        CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" \
+        LDFLAGS="-L$(brew --prefix readline)/lib" \
+        LDFLAGS="-L$(brew --prefix openssl)/lib" \
+        LDFLAGS="-L$(brew --prefix sqlite)/lib" \
+        LDFLAGS="-L$(brew --prefix expat)/lib" \
         pyenv install -v ${version}
     else
         echo "Pyenv: already installed ... ${version}"
@@ -27,20 +36,15 @@ brew install sqlite3
 brew install openssl 
 brew install expat
 
+#pip uninstall pyserial
+#sudo pip install pyserial
+
+pyenv install -l
 
 
-export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
-export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
-export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
-export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
-export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
-export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
-export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
-export LDFLAGS="-L$(brew --prefix expat)/lib $LDFLAGS"
-export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include $CFLAGS"
 
 pyenv_install_python 2.7.14
-#pyenv_install_python 3.6.3
+pyenv_install_python 3.6.3
 
 
 # Keep 2.7.14 as default python version
