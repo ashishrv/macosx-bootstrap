@@ -27,7 +27,7 @@ brew install sqlite3
 brew install openssl 
 brew install expat
 
-export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+#export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
 export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
