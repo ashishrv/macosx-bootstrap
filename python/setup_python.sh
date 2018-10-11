@@ -10,15 +10,8 @@ pyenv_install_python(){
     if [ "x${fact}" == "x" ]; then 
         echo "Pyenv : not installed ... ${version}"
         echo "Instaling ....."
-        CFLAGS="-I$(brew --prefix readline)/include" \
-        CFLAGS="-I$(brew --prefix openssl)/include" \
-        CFLAGS="-I$(brew --prefix sqlite)/include" \
-        CFLAGS="-I$(brew --prefix expat)/include" \
-        CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" \
-        LDFLAGS="-L$(brew --prefix readline)/lib" \
-        LDFLAGS="-L$(brew --prefix openssl)/lib" \
-        LDFLAGS="-L$(brew --prefix sqlite)/lib" \
-        LDFLAGS="-L$(brew --prefix expat)/lib" \
+        CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(brew --prefix sqlite)/include -I$(brew --prefix expat)/include -I$(xcrun --show-sdk-path)/usr/include" \
+        LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib -L$(brew --prefix sqlite)/lib -L$(brew --prefix expat)/lib" \
         pyenv install -v ${version}
     else
         echo "Pyenv: already installed ... ${version}"
