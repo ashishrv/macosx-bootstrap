@@ -10,8 +10,6 @@ pyenv_install_python(){
     if [ "x${fact}" == "x" ]; then 
         echo "Pyenv : not installed ... ${version}"
         echo "Instaling ....."
-        CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(brew --prefix sqlite)/include -I$(brew --prefix expat)/include -I$(xcrun --show-sdk-path)/usr/include" \
-        LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib -L$(brew --prefix sqlite)/lib -L$(brew --prefix expat)/lib" \
         pyenv install -v ${version}
     else
         echo "Pyenv: already installed ... ${version}"
@@ -29,6 +27,17 @@ brew install sqlite3
 brew install openssl 
 brew install expat
 
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
+export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
+export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
+export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
+export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix sqlite)/expat $LDFLAGS"
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
+
 #pip uninstall pyserial
 #sudo pip install pyserial
 
@@ -37,7 +46,7 @@ pyenv install -l
 
 
 pyenv_install_python 2.7.14
-pyenv_install_python 3.6.3
+#pyenv_install_python 3.6.3
 
 
 # Keep 2.7.14 as default python version
