@@ -4,6 +4,7 @@ export PYENV_ROOT=${HOME}/.pyenv
 eval "$(pyenv init -)"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
+
 pyenv_install_python(){
     version=$1
     fact=`pyenv versions | grep $version`
