@@ -7,7 +7,9 @@ mac_app_brew_cask_install() {
     mac_app_basename=$(basename $mac_app)
     available_app=`echo ${all_apps} | grep ${mac_app_basename}`
     if [ "x${available_app}" == "x" ]; then 
+    	echo "Installing App: ${mac_app}"
         brew cask install ${mac_app}
+        
     else
         echo "Mac application is already installed ... ${mac_app}"
     fi
