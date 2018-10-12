@@ -10,7 +10,7 @@ pyenv_install_python(){
     if [ "x${fact}" == "x" ]; then 
         echo "Pyenv : not installed ... ${version}"
         echo "Instaling ....."
-        pyenv install -v ${version}
+        CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS" PKG_CONFIG_PATH="$PKG_CONFIG_PATH" CPPFLAGS="$CPPFLAGS" pyenv install -v ${version}
     else
         echo "Pyenv: already installed ... ${version}"
         # Make sure pip is installed for every version
@@ -28,12 +28,23 @@ brew install openssl
 brew install expat
 
 #export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+unset CFLAGS
 export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix xz)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix zlib)/include $CFLAGS"
+
+
+
+export CPPFLAGS="-I$(brew --prefix readline)/include $CPPFLAGS"
+export CPPFLAGS="-I$(brew --prefix openssl)/include $CPPFLAGS"
+export CPPFLAGS="-I$(brew --prefix sqlite)/include $CPPFLAGS"
+export CPPFLAGS="-I$(brew --prefix expat)/include $CPPFLAGS"
+export CPPFLAGS="-I$(brew --prefix xz)/include $CPPFLAGS"
+export CPPFLAGS="-I$(brew --prefix zlib)/include $CPPFLAGS"
+
 
 export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
