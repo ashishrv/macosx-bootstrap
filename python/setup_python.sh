@@ -49,16 +49,20 @@ export CPPFLAGS="-I$(brew --prefix zlib)/include $CPPFLAGS"
 export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
-export LDFLAGS="-L$(brew --prefix expat)/expat $LDFLAGS"
-export LDFLAGS="-L$(brew --prefix expat)/xz $LDFLAGS"
-export LDFLAGS="-L$(brew --prefix expat)/zlib $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix expat)/lib $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix xz)/lib $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix zlib)/lib $LDFLAGS"
 
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
+
+echo "CFLAGS = $CFLAGS"
+echo "CPPFLAGS = $CPPFLAGS"
+echo "LDFLAGS = $LDFLAGS"
 
 #pip uninstall pyserial
 #sudo pip install pyserial
 
-pyenv install -l
+# pyenv install -l
 
 
 
