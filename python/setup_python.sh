@@ -21,12 +21,13 @@ pyenv_install_pip(){
 		else
 			echo "pip is alread installed for python versions: ${version}"
 	    fi 
+	    # Install some defaults
+	    pip install virtualenv
     fi	
 }
 
 # Keep 2.7.14 as default python version
 pyenv_install_pip 2.7.14
 pyenv_install_pip 3.6.3
-
 
 

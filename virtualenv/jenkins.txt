@@ -1,4 +1,0 @@
-j2cli==0.3.1.post0
-Jinja2==2.10
-MarkupSafe==1.0
-PyYAML==3.12
