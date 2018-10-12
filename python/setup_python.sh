@@ -36,8 +36,6 @@ export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix xz)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix zlib)/include $CFLAGS"
 
-
-
 export CPPFLAGS="-I$(brew --prefix readline)/include $CPPFLAGS"
 export CPPFLAGS="-I$(brew --prefix openssl)/include $CPPFLAGS"
 export CPPFLAGS="-I$(brew --prefix sqlite)/include $CPPFLAGS"
@@ -53,7 +51,8 @@ export LDFLAGS="-L$(brew --prefix expat)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix xz)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix zlib)/lib $LDFLAGS"
 
-export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig $PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig $PKG_CONFIG_PATH"
 
 echo "CFLAGS = $CFLAGS"
 echo "CPPFLAGS = $CPPFLAGS"
