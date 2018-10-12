@@ -20,6 +20,7 @@ setup_venv(){
 		pyenv local
 		venv_cmd=`pyenv which virtualenv`
 		pip_cmd=`pyenv which pip`
+		$pip_cmd install virtualenv
 		echo "Using: $venv_cmd"
 		echo "Creating virtual env: $venv_name at $HOME/.vpython/$venv_version/$venv_name"
 		cd $HOME/.vpython/$venv_version
