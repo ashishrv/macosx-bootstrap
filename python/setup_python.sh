@@ -4,10 +4,8 @@ export PYENV_ROOT=${HOME}/.pyenv
 eval "$(pyenv init -)"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-
-pyenv_install_python(){
+pyenv_install_pip(){
 	version=$1
-
 	fact=`pyenv versions | grep $version`
 	if [ "x${fact}" == "x" ]; then 
 		echo "Pyenv : not installed ... ${version}"
@@ -25,6 +23,6 @@ pyenv_install_python(){
 }
 
 # Keep 2.7.14 as default python version
-pyenv_install_python 2.7.14
-pyenv_install_python 3.6.3
+pyenv_install_pip 2.7.14
+pyenv_install_pip 3.6.3
 
