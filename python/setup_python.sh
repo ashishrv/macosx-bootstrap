@@ -32,10 +32,16 @@ export CFLAGS="-I$(brew --prefix readline)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix openssl)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
 export CFLAGS="-I$(brew --prefix expat)/include $CFLAGS"
+export CFLAGS="-I$(brew --prefix xz)/include $CFLAGS"
+export CFLAGS="-I$(brew --prefix zlib)/include $CFLAGS"
+
 export LDFLAGS="-L$(brew --prefix readline)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix openssl)/lib $LDFLAGS"
 export LDFLAGS="-L$(brew --prefix sqlite)/lib $LDFLAGS"
-export LDFLAGS="-L$(brew --prefix sqlite)/expat $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix expat)/expat $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix expat)/xz $LDFLAGS"
+export LDFLAGS="-L$(brew --prefix expat)/zlib $LDFLAGS"
+
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 
 #pip uninstall pyserial
