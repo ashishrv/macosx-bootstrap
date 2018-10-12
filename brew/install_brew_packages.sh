@@ -22,7 +22,7 @@ install_brew_package(){
 
 cat ${SCRIPT_PATH}/brew_packages.txt | while read LINE
 do
-	echo "Installing package: ${LINE}"
+	echo "Checking brew package: ${LINE}"
     install_brew_package ${LINE}
 done
 
