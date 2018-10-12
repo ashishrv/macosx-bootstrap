@@ -14,15 +14,20 @@ pyenv_install_pip(){
 		if [ ! -e ${PYENV_ROOT}/versions/${version}/bin/pip ]; then
 	        echo "Setting up pip for version ${version}"
 	        pyenv local $version
+	        pyenv local
 			wget https://bootstrap.pypa.io/get-pip.py
 			python get-pip.py
 			pip install dotfiles
 			rm get-pip.py
 		else
 			echo "pip is alread installed for python versions: ${version}"
+			# Install some defaults
+		    pyenv local $version
+		    pyenv local
+			pip_cmd=`pyenv which pip`
+		    $pip_cmd install virtualenv
+		    venv_cmd=`pyenv which virtualenv`
 	    fi 
-	    # Install some defaults
-	    pip install virtualenv
     fi	
 }
 
