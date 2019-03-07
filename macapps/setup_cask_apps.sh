@@ -23,6 +23,7 @@ mac_app_brew_cask_install slate
 mac_app_brew_cask_install atom
 mac_app_brew_cask_install bbedit
 mac_app_brew_cask_install brave
+mac_app_brew_cask_install brackets
 mac_app_brew_cask_install caffeine
 mac_app_brew_cask_install cheatsheet
 mac_app_brew_cask_install chromium

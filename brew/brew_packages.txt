@@ -71,6 +71,7 @@ intltool
 isl
 ispell
 jasper
+jemalloc
 jenv
 jove
 jpeg
@@ -93,14 +94,20 @@ libpng
 libsndfile
 libssh2
 libtasn1
+libtermkey
 libtiff
 libtool
 libunistring
 libusb
+libuv
 libvorbis
+libvterm
 libyaml
 little-cms2
 lua
+lua@5.1
+luajit
+luarocks
 lynx
 m4
 metis
@@ -108,7 +115,9 @@ micro
 mpfr
 mpv
 mscgen
+msgpack
 ncurses
+neovim
 netcat
 netpbm
 nettle
@@ -159,6 +168,7 @@ tig
 tmux
 trash
 tree
+unibilium
 vala
 veclibfort
 webp

@@ -28,6 +28,7 @@ headset
 iterm2
 java
 java8
+joplin
 kaleidoscope
 keepassxc
 kitematic
