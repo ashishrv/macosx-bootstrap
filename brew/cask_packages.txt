@@ -1,5 +1,6 @@
 1password
 1password-cli
+alacritty
 alfred
 atom
 bbedit
@@ -22,17 +23,20 @@ font-fira-mono
 font-fira-mono-for-powerline
 font-fira-sans
 font-hack-nerd-font
+font-iosevka
 fork
 gitup
 google-chrome-canary
 headset
 iterm2
 java
+java11
 java8
 joplin
 kaleidoscope
 keepassxc
 kitematic
+kitty
 latexit
 laverna
 macdown

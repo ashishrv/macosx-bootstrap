@@ -95,6 +95,7 @@ libffi
 libgcrypt
 libgpg-error
 libheif
+libidn2
 libksba
 libmagic
 libmpc
@@ -121,6 +122,8 @@ luajit
 luarocks
 lynx
 m4
+make
+maven
 metis
 micro
 mpfr
@@ -132,6 +135,7 @@ neovim
 netcat
 netpbm
 nettle
+nmap
 nnn
 node
 npth
