@@ -7,7 +7,7 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 pyenv_install_pip(){
 	version=$1
 	fact=`pyenv versions | grep $version`
-	if [ "x${fact}" == "x" ]; then 
+	if [ "x${fact}" == "x" ]; then
 		echo "Pyenv : not installed ... ${version}"
 	else
 		echo "Checking pip for version: $version"
@@ -25,14 +25,12 @@ pyenv_install_pip(){
 		    pyenv local $version
 		    pyenv local
 			pip_cmd=`pyenv which pip`
+			pip install --upgrade pip
 		    $pip_cmd install virtualenv
 		    venv_cmd=`pyenv which virtualenv`
-	    fi 
-    fi	
+	    fi
+    fi
 }
 
-# Keep 2.7.14 as default python version
-pyenv_install_pip 2.7.14
-pyenv_install_pip 3.6.3
-
-
+pyenv_install_pip 2.7.16
+pyenv_install_pip 3.7.4
