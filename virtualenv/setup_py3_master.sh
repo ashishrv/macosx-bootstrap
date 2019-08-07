@@ -5,7 +5,7 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 python_version=3.7.4
 curdir=`pwd`
 
-if [ !-e ${PYENV_ROOT}/${python_version}/master/bin/activate ]; then
+if [ ! -e ${PYENV_ROOT}/${python_version}/master/bin/activate ]; then
     cd ${HOME}/.vpython
     mkdir -p ${PYENV_ROOT}/${python_version}
     cd ${PYENV_ROOT}/${python_version}
@@ -14,6 +14,7 @@ if [ !-e ${PYENV_ROOT}/${python_version}/master/bin/activate ]; then
 
 fi
 
+pyenv versions
 source ${PYENV_ROOT}/${python_version}/master/bin/activate
 
 # Notebooks
@@ -51,6 +52,23 @@ pip install lazy-object-proxy
 pip install mccabe
 pip install pycodestyle
 pip install wrapt
+
+
+#devops
+pip install j2cli
+pip install ansible
+
+#AWS
+pip install awscli
+pip install boto3
+
+#Security
+pip install yaycl
+pip install yaycl-crypt
+pip install SSLyze
+pip install cryptography
+pip install nassl
+
 
 
 # deactivate after it is done
