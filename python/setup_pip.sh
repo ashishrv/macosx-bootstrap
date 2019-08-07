@@ -28,6 +28,7 @@ pyenv_install_pip(){
 			pip install --upgrade pip
 		    $pip_cmd install virtualenv
 		    venv_cmd=`pyenv which virtualenv`
+			pip install pipenv
 	    fi
     fi
 }

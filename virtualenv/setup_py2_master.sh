@@ -4,7 +4,7 @@ export VENV_ROOT=${HOME}/.vpython
 
 eval "$(pyenv init -)"
 export PATH="/usr/local/opt/curl/bin:$PATH"
-python_version=3.7.4
+python_version=2.7.16
 curdir=`pwd`
 
 if [ ! -e ${VENV_ROOT}/${python_version}/master/bin/activate ]; then
@@ -74,10 +74,8 @@ pip install nassl
 #Testing
 pip install locustio
 
-
 #Dotfiles management
 pip install dotfiles
-
 
 # deactivate after it is done
 cd ${curdir}
