@@ -77,6 +77,9 @@ pip install locustio
 #Dotfiles management
 pip install dotfiles
 
+# TMUX
+pip install tmuxp
+
 # deactivate after it is done
 cd ${curdir}
 deactivate
