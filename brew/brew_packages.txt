@@ -35,6 +35,7 @@ exa
 ffmpeg
 fftw
 fig2dev
+figlet
 flac
 flex
 fltk
@@ -203,4 +204,6 @@ xz
 youtube-dl
 zeromq
 zlib
+zsh
+zsh-completions
 zstd
