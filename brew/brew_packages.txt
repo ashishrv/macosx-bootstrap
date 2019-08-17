@@ -117,6 +117,7 @@ libvorbis
 libvterm
 libyaml
 little-cms2
+lnav
 lua
 lua@5.1
 luajit
@@ -125,6 +126,7 @@ lynx
 m4
 make
 maven
+mercurial
 metis
 micro
 mpfr
@@ -165,6 +167,7 @@ potrace
 pstoedit
 pyenv
 python
+python@2
 qhull
 qrupdate
 ranger
