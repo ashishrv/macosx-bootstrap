@@ -23,6 +23,8 @@ dbus
 dep
 diff-so-fancy
 diffutils
+djvu2pdf
+djvulibre
 docbook
 docbook-xsl
 elixir
@@ -170,11 +172,13 @@ python
 python@2
 qhull
 qrupdate
+randomize-lines
 ranger
 readline
 reattach-to-user-namespace
 ripgrep
 rpm
+rpm2cpio
 ruby
 ruby-build
 rust
@@ -195,10 +199,12 @@ trash
 tree
 unbound
 unibilium
+vagrant-completion
 vala
 veclibfort
 webp
 wget
+wtfutil
 wxmac
 x264
 x265

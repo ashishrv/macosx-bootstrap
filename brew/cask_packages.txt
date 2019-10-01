@@ -22,6 +22,7 @@ font-fira-code
 font-fira-mono
 font-fira-mono-for-powerline
 font-fira-sans
+font-fontawesome
 font-hack-nerd-font
 font-iosevka
 fork
@@ -56,10 +57,13 @@ skype
 skypewebplugin
 slate
 sublime-text
+tex-live-utility
 texshop
 the-unarchiver
 transmission
 upterm
+vagrant
+vagrant-manager
 virtualbox
 virtualbox-extension-pack
 visual-studio-code
