@@ -52,6 +52,7 @@ gdk-pixbuf
 gettext
 ghostscript
 git
+giter8
 gl2ps
 glib
 global
@@ -135,6 +136,7 @@ mpfr
 mpv
 mscgen
 msgpack
+ncdu
 ncurses
 neovim
 netcat

@@ -25,6 +25,7 @@ font-fira-sans
 font-fontawesome
 font-hack-nerd-font
 font-iosevka
+font-victor-mono
 fork
 gitup
 google-chrome-canary
