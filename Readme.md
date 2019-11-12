@@ -10,14 +10,22 @@ unzip master.zip
 sh ${HOME}/temp/macosx-bootstrap-master/bootstrap.sh
 ```
 
-## Brew packages
+## Brew
+
+### packages
 
 ```bash
 sh ${HOME}/temp/macosx-bootstrap-master/brew/install-brew-packages.sh
 ```
 
-## Brew cask packages
+### Cask packages
 
 ```bash
 sh ${HOME}/temp/macosx-bootstrap-master/brew/install-cask-packages.sh
 ```
+
+## Others
+
+### Setup dropbox
+### Setup 1Password
+### Setup KeepassXc
