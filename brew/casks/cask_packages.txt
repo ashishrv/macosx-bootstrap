@@ -30,6 +30,7 @@ fork
 gitup
 google-chrome-canary
 headset
+hyper
 iterm2
 java
 java11
