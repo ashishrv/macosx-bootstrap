@@ -1,0 +1,5 @@
+cryptography==2.5
+SSLyze==2.1.3
+nassl
+yaycl
+yaycl-crypt

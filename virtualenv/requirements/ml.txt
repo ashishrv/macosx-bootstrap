@@ -1,0 +1,8 @@
+pandas==0.25.0
+bokeh
+seaborn
+ggplot
+plotly
+pygal
+gleam
+geoplotlib

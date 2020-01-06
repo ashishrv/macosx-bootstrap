@@ -1,0 +1,3 @@
+yaycl==0.3.0
+yaycl-crypt==0.4.0
+ansible==2.8.3
