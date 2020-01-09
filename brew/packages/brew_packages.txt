@@ -214,6 +214,7 @@ unibilium
 vagrant-completion
 vala
 veclibfort
+watch
 webp
 wget
 wtfutil
