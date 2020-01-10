@@ -11,3 +11,4 @@ j2cli==0.3.10
 pexpect==4.7.0
 Pygments==2.4.2
 requests==2.22.0
+csvkit
