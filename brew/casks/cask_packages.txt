@@ -1,5 +1,6 @@
 1password
 1password-cli
+adoptopenjdk8
 alacritty
 alfred
 atom
@@ -31,10 +32,9 @@ gitup
 google-chrome-canary
 headset
 hyper
+intellij-idea-ce
 iterm2
-java
 java11
-java8
 joplin
 kaleidoscope
 keepassxc

@@ -12,6 +12,7 @@ berkeley-db
 binutils
 boost
 boost-build
+broot
 cairo
 cask
 cig
@@ -55,6 +56,7 @@ gdk-pixbuf
 gettext
 ghostscript
 git
+git-flow
 giter8
 gl2ps
 glew
@@ -146,7 +148,6 @@ msgpack
 ncdu
 ncurses
 neovim
-netcat
 netpbm
 nettle
 nmap
@@ -194,6 +195,8 @@ rust
 s-lang
 sbt
 scala
+scala@2.12
+scalastyle
 sdedit
 sdl2
 sdl2_image
