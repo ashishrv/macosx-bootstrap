@@ -1,4 +1,5 @@
 adns
+ammonite-repl
 antibody
 arpack
 asciidoc

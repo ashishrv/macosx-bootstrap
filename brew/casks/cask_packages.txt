@@ -3,6 +3,7 @@
 adoptopenjdk8
 alacritty
 alfred
+anki
 atom
 bbedit
 boostnote
@@ -11,6 +12,7 @@ brave
 caffeine
 cheatsheet
 chromium
+dash4
 difffork
 diffmerge
 docker
@@ -51,6 +53,7 @@ notational-velocity
 notebooks
 nteract
 nvalt
+r
 r-app
 rodeo
 rstudio
