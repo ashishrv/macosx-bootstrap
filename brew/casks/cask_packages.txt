@@ -30,6 +30,8 @@ font-hack-nerd-font
 font-iosevka
 font-victor-mono
 fork
+fsnotes
+geany
 gitup
 google-chrome-canary
 headset
