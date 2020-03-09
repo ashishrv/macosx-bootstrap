@@ -81,6 +81,7 @@ harfbuzz
 hdf5
 htop
 hub
+icdiff
 icu4c
 ilmbase
 imagemagick

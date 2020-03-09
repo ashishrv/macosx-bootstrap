@@ -53,6 +53,7 @@ meld
 multifirefox
 notational-velocity
 notebooks
+notion
 nteract
 nvalt
 r
