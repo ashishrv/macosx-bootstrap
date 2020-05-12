@@ -103,6 +103,7 @@ jq
 kafka
 kakoune
 lame
+lazygit
 libarchive
 libass
 libassuan
