@@ -14,6 +14,7 @@ binutils
 boost
 boost-build
 broot
+cabal-install
 cairo
 cask
 cig
@@ -32,6 +33,7 @@ djvu2pdf
 djvulibre
 docbook
 docbook-xsl
+eigen
 elixir
 emacs
 emacs-plus
@@ -55,6 +57,7 @@ gd
 gdbm
 gdk-pixbuf
 gettext
+ghc
 ghostscript
 git
 git-flow
@@ -81,6 +84,7 @@ harfbuzz
 hdf5
 htop
 hub
+hwloc
 icdiff
 icu4c
 ilmbase
@@ -102,6 +106,7 @@ lame
 libarchive
 libass
 libassuan
+libcerf
 libcroco
 libde265
 libevent
@@ -136,9 +141,11 @@ lua@5.1
 luajit
 luarocks
 lynx
+lzo
 m4
 make
 maven
+mdbook
 mercurial
 metis
 micro
@@ -158,6 +165,8 @@ node
 npth
 octave
 oniguruma
+open-mpi
+openblas
 openexr
 openjpeg
 openssl
@@ -182,8 +191,10 @@ pstoedit
 pyenv
 python
 python@2
+python@3.8
 qhull
 qrupdate
+qt
 randomize-lines
 ranger
 readline
@@ -202,11 +213,14 @@ scalastyle
 sdedit
 sdl2
 sdl2_image
+secrets
 shared-mime-info
 sqlite
 ssh-copy-id
 suite-sparse
+sundials
 szip
+tbb
 texinfo
 the_silver_searcher
 tig
@@ -216,6 +230,7 @@ trash
 tree
 unbound
 unibilium
+utf8proc
 vagrant-completion
 vala
 veclibfort
@@ -233,5 +248,7 @@ zeromq
 zlib
 zookeeper
 zsh
+zsh-autosuggestions
 zsh-completions
+zsh-syntax-highlighting
 zstd

@@ -18,6 +18,7 @@ diffmerge
 docker
 dropbox
 evernote
+falcon-sql-client
 firefox
 fish
 flycut
@@ -30,6 +31,7 @@ font-hack-nerd-font
 font-iosevka
 font-victor-mono
 fork
+freemind
 fsnotes
 geany
 gitup
@@ -64,10 +66,13 @@ skim
 skype
 skypewebplugin
 slate
+sublime-merge
 sublime-text
+swifty
 tex-live-utility
 texshop
 the-unarchiver
+thunderbird
 transmission
 upterm
 vagrant
