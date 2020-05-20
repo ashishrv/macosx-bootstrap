@@ -29,6 +29,7 @@ dbus
 dep
 diff-so-fancy
 diffutils
+direnv
 djvu2pdf
 djvulibre
 docbook
@@ -80,6 +81,7 @@ graphicsmagick
 graphite2
 graphviz
 grep
+gts
 harfbuzz
 hdf5
 htop
@@ -169,6 +171,7 @@ oniguruma
 open-mpi
 openblas
 openexr
+openjdk
 openjpeg
 openssl
 openssl@1.1
