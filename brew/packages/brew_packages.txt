@@ -1,5 +1,6 @@
 adns
 ammonite-repl
+ansifilter
 antibody
 arpack
 asciidoc
@@ -25,6 +26,7 @@ crosstool-ng
 ctags
 curl
 cython
+dart
 dbus
 dep
 diff-so-fancy
@@ -42,6 +44,7 @@ ent
 epstool
 erlang
 exa
+fd
 ffmpeg
 fftw
 fig2dev
@@ -86,6 +89,7 @@ harfbuzz
 hdf5
 htop
 hub
+hugo
 hwloc
 icdiff
 icu4c
@@ -137,6 +141,7 @@ libuv
 libvorbis
 libvterm
 libyaml
+libzip
 little-cms2
 lnav
 lua
@@ -149,10 +154,10 @@ m4
 make
 maven
 mdbook
+mdcat
 mercurial
 metis
 micro
-mkdocs
 mpfr
 mpv
 mscgen
@@ -165,6 +170,7 @@ nettle
 nmap
 nnn
 node
+noti
 npth
 octave
 oniguruma
@@ -203,6 +209,7 @@ randomize-lines
 ranger
 readline
 reattach-to-user-namespace
+reminders-cli
 ripgrep
 rpm
 rpm2cpio
@@ -210,6 +217,7 @@ ruby
 ruby-build
 rust
 s-lang
+sass
 sbt
 scala
 scala@2.12
@@ -229,6 +237,7 @@ texinfo
 the_silver_searcher
 tig
 tika
+tldr
 tmux
 trash
 tree

@@ -12,6 +12,7 @@ brave
 caffeine
 cheatsheet
 chromium
+cryo
 dash4
 difffork
 diffmerge
