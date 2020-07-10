@@ -29,13 +29,13 @@ install_brew_package(){
 install_brew_package readline
 install_brew_package xz
 install_brew_package wget
-install_brew_package cask
+#install_brew_package cask
 install_brew_package homebrew/dupes/apple-gcc42
 
 
 # Get Homebrew-Cask: https://caskroom.github.io/
-brew tap caskroom/cask
+#brew tap homebrew/cask-cask
 # https://github.com/caskroom/homebrew-versions
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 # https://github.com/caskroom/homebrew-fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
