@@ -10,11 +10,13 @@ automake
 bash
 bash-completion
 bat
+bdw-gc
 berkeley-db
 binutils
 boost
 boost-build
 broot
+c-ares
 cabal-install
 cairo
 cask
@@ -40,10 +42,12 @@ eigen
 elixir
 emacs
 emacs-plus
+emacs-plus@26
 ent
 epstool
 erlang
 exa
+exiftool
 fd
 ffmpeg
 fftw
@@ -63,6 +67,7 @@ gdk-pixbuf
 gettext
 ghc
 ghostscript
+gifsicle
 git
 git-flow
 giter8
@@ -72,6 +77,7 @@ glib
 global
 glpk
 gmp
+gnu-getopt
 gnu-sed
 gnu-tar
 gnupg
@@ -85,6 +91,7 @@ graphite2
 graphviz
 grep
 gts
+guile
 harfbuzz
 hdf5
 htop
@@ -99,6 +106,7 @@ imagemagick@6
 intltool
 isl
 ispell
+jansson
 jasper
 jemalloc
 jenv
@@ -116,6 +124,7 @@ libassuan
 libcerf
 libcroco
 libde265
+libev
 libevent
 libffi
 libgcrypt
@@ -123,6 +132,7 @@ libgpg-error
 libheif
 libidn2
 libksba
+liblqr
 libmagic
 libmpc
 libogg
@@ -167,6 +177,7 @@ ncurses
 neovim
 netpbm
 nettle
+nghttp2
 nmap
 nnn
 node
@@ -178,9 +189,10 @@ open-mpi
 openblas
 openexr
 openjdk
+openjdk@11
 openjpeg
-openssl
 openssl@1.1
+opus
 p11-kit
 p7zip
 pandoc
@@ -199,14 +211,13 @@ portaudio
 potrace
 pstoedit
 pyenv
-python
-python@2
 python@3.8
 qhull
 qrupdate
 qt
 randomize-lines
 ranger
+rbenv
 readline
 reattach-to-user-namespace
 reminders-cli
@@ -254,6 +265,7 @@ wtfutil
 wxmac
 x264
 x265
+xmlto
 xvid
 xz
 youtube-dl

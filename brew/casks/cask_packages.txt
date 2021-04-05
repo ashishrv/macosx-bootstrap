@@ -3,6 +3,7 @@
 adoptopenjdk8
 alacritty
 alfred
+amethyst
 anki
 atom
 bbedit
@@ -37,6 +38,7 @@ fsnotes
 geany
 gitup
 google-chrome-canary
+hammerspoon
 headset
 hyper
 intellij-idea-ce
@@ -66,7 +68,7 @@ rstudio
 skim
 skype
 skypewebplugin
-slate
+sourcetrail
 sublime-merge
 sublime-text
 swifty
@@ -84,3 +86,4 @@ visual-studio-code
 vlc
 xoctave
 xquartz
+zettlr
